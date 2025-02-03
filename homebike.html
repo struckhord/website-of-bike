@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #15f309, #07d2d9);
+            color: white;
+            text-align: center;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 18px;
+        }
+        
+        .navbar a:hover {
+            background: hsl(12, 95%, 42%);
+            border-radius: 5px;
+        }
+        
+        .hero {
+            padding: 50px 20px;
+        }
+        
+        .hero h1 {
+            font-size: 50px;
+        }
+        
+        .bike-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        
+        .bike-gallery img {
+            width: 300px;
+            height: auto;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px;
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Bikes</title>
+<style>
+    /* Reset some default styles */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* General body styling */
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    header {
+        background: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size: 36px;
+    }
+    /* Main container for content */
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    
+    .intro,
+    .bike-types,
+    .gallery,
+    .footer {
+        margin-bottom: 40px;
+    }
+    /* Introduction Section */
+    
+    .intro {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .intro h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .intro p {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    /* Bike Types Section */
+    
+    .bike-types {
+        text-align: center;
+    }
+    
+    .bike-types h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .bike-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .bike-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 30%;
+        margin-bottom: 20px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    
+    .bike-card:hover {
+        transform: scale(1.05);
+    }
+    
+    .bike-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .bike-card h3 {
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        font-size: 24px;
+    }
+    
+    .bike-card p {
+        padding: 20px;
+        font-size: 16px;
+    }
+    /* Gallery Section */
+    
+    .gallery {
+        text-align: center;
+    }
+    
+    .gallery h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .gallery-images {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .gallery-images img {
+        width: 100%;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+    
+    .gallery-images img:hover {
+        transform: scale(1.05);
+    }
+    /* Footer Section */
+    
+    .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="file:///C:/Users/amit9/Music/New%20folder/amit%20project/new.html#home" target="_blank">Home</a>
+        <a href="file:///C:/Users/amit9/Music/New%20folder/amit%20project/homebike.html" target="_blank">About</a>
+        <a href="file:///C:/Users/amit9/Music/New%20folder/amit%20project/con2.html#about" target="_blank">Contact</a>
+    </div>
+    <div class="content">
+
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <h1>All About Bikes</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+
+
+    <!-- Header Section -->
+
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Introduction Section -->
+        <section class="intro">
+            <h2>Welcome to the World of Bikes</h2>
+            <p>Bikes are one of the most efficient and eco-friendly modes of transport. They offer great health benefits, are fun to ride, and are suitable for people of all ages. In this page, we explore different types of bikes and showcase beautiful images
+                of biking adventures. Whether you're a professional cyclist or someone who enjoys a weekend ride, there's a bike for everyone!</p>
+        </section>
+
+        <!-- Bike Types Section -->
+        <section class="bike-types">
+            <h2>Popular Types of Bikes</h2>
+            <div class="bike-cards">
+                <div class="bike-card">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D22AQFvgd_DZGGY6A/feedshare-shrink_800/feedshare-shrink_800/0/1727633858729?e=2147483647&v=beta&t=Y5Wjf8X9vVvLkB7O9GRN9iQMhHcl8-ARQGOmSuxSrU8" alt="Mountain Bike">
+                    <h3>Mountain Bike</h3>
+                    <p>Designed for off-road cycling, mountain bikes offer durability and traction to navigate rough terrains.</p>
+                </div>
+                <div class="bike-card">
+                    <img src="https://i.ytimg.com/vi/cCRJ3xmqGck/sddefault.jpg" alt="Road Bike">
+                    <h3>Road Bike</h3>
+                    <p>Perfect for speed and efficiency on paved roads, road bikes are ideal for long-distance cycling.</p>
+                </div>
+                <div class="bike-card">
+                    <img src="https://preview.redd.it/remember-this-og-bike-david-putra-2000-cc-v0-cjw8e1eloo0d1.jpeg?width=640&crop=smart&auto=webp&s=b68a411eded47a3051c1203dee79d0cb32dbd529" alt="Hybrid Bike">
+                    <h3>Hybrid Bike</h3>
+                    <p>A blend of road and mountain bikes, hybrid bikes are versatile and perfect for casual riders.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <h2>Bike Adventures</h2>
+            <div class="gallery-images">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Bike Adventure 1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpIKA0WDHHIpBeHD60MzkMh7EMZtiL_nZceg&s" alt="Bike Adventure 2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQJ3C3yU-skycdt7IEZTMPEFqz0SHaMbT-7A&s" alt="Bike Adventure 3">
+                <img src="https://i.pinimg.com/736x/72/7a/62/727a62900cfe53766ced32382537e54c.jpg" alt="Bike Adventure 4">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/380085e1-0d1c-4516-9c12-08efab5e6cc7/dfjeat9-cacd9a6d-5692-44a8-808a-8341ad121c9a.png/v1/fill/w_1024,h_683,q_80,strp/zastermont_bulky_futuristic_mecha_super_motorcycle_by_x_cannibal_dfjeat9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjgzIiwicGF0aCI6IlwvZlwvMzgwMDg1ZTEtMGQxYy00NTE2LTljMTItMDhlZmFiNWU2Y2M3XC9kZmplYXQ5LWNhY2Q5YTZkLTU2OTItNDRhOC04MDhhLTgzNDFhZDEyMWM5YS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.xwqXSzTTEXJLl_ECMGMbXvfOBoSh0IcsxOCM_VGRhJI"
+                    alt="Bike Adventure 5">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/380085e1-0d1c-4516-9c12-08efab5e6cc7/dfjeb2c-1b384410-7d23-468b-bee9-0ace343d04a5.png/v1/fill/w_1024,h_683,q_80,strp/zastermont_bulky_futuristic_mecha_super_motorcycle_by_x_cannibal_dfjeb2c-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjgzIiwicGF0aCI6IlwvZlwvMzgwMDg1ZTEtMGQxYy00NTE2LTljMTItMDhlZmFiNWU2Y2M3XC9kZmplYjJjLTFiMzg0NDEwLTdkMjMtNDY4Yi1iZWU5LTBhY2UzNDNkMDRhNS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.pvI_9-IWmYcBKJT7Rty79g3LitCKpTgD0k6TTc2XAes"
+                    alt="Bike Adventure 6">
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 All About Bikes | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
